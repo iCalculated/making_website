@@ -26,44 +26,46 @@ To read more about using these font, please visit the Next.js documentation:
 import Link from "next/link";
 import Image from "next/image";
 import makers from "/makers.webp";
-
+import { Button } from "./ui/button";
+import { BackgroundGradientAnimationDemo } from "./blob";
 export function HomePage() {
   return (
     <main className="flex flex-col gap-12 md:gap-20">
-      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-        <div className="mx-auto container px-4 md:px-6 flex items-start justify-between">
-          <div className="space-y-6">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-              making@umn
-            </h1>
-            <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              We host weekly sessions for you to work on your passion projects
-              with likeminded people.
-            </p>
-            <div className="space-x-4">
-              <Link
-                className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-lg font-medium shadow-md transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50"
-                href="https://lu.ma/making-umn"
-              >
-                Attend a Session
-              </Link>
-              <Link
-                className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-lg font-medium shadow-md transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50"
-                href="https://www.figma.com/file/5v5Y8XMrT9Ib0rvYgx7pSK/making@umn-scrapbook?type=whiteboard&node-id=8-11&t=9dtEc3yHBrG1tKz8-0"
-              >
-                Our Projects
-              </Link>
+      <BackgroundGradientAnimationDemo>
+        <section className="absolute left-1/2 top-1/2 z-10 w-full -translate-x-1/2 -translate-y-1/2">
+          <div className="container mx-auto flex h-full flex-wrap items-center justify-between px-4 sm:flex-nowrap md:px-6">
+            <div className="md:max-w-1/2 lg:max-w-1/2 space-y-6">
+              <h1 className="text-5xl font-bold tracking-tighter text-white opacity-90">
+                making@umn
+              </h1>
+              <p className="max-w-[700px] text-base/relaxed text-gray-300 md:text-xl/relaxed">
+                We host weekly sessions for you to work on your passion projects
+                with likeminded people.
+              </p>
+              <div className="space-x-2 pb-4 md:space-x-4">
+                <Link href="https://lu.ma/making-umn">
+                  <Button variant="outline" className="opacity-90 shadow-md">
+                    Attend a Session
+                  </Button>
+                </Link>
+                <Link href="https://www.figma.com/file/5v5Y8XMrT9Ib0rvYgx7pSK/making@umn-scrapbook?type=whiteboard&node-id=8-11&t=9dtEc3yHBrG1tKz8-0">
+                  <Button
+                    variant="ghost"
+                    className="border text-white shadow-md"
+                  >
+                    Our Projects
+                  </Button>
+                </Link>
+              </div>
             </div>
+            <Image
+              alt="Image"
+              className="opacity-88 mx-auto rounded-xl shadow-xl md:w-1/2"
+              src={makers}
+            />
           </div>
-          <Image
-            alt="Image"
-            className="mx-auto rounded-xl object-cover object-center sm:w-full lg:order-last shadow-xl"
-            height="400"
-            src={makers}
-            width="500"
-          />
-        </div>
-      </section>
+        </section>
+      </BackgroundGradientAnimationDemo>
     </main>
   );
 }
