@@ -44,14 +44,17 @@ export function HomePage() {
               </p>
               <div className="space-x-2 pb-4 md:space-x-4">
                 <Link href="https://lu.ma/making-umn">
-                  <Button variant="outline" className="opacity-90 shadow-md">
+                  <Button
+                    variant="outline"
+                    className="opacity-90 shadow-md hover:bg-transparent hover:text-white"
+                  >
                     Attend a Session
                   </Button>
                 </Link>
                 <Link href="https://www.figma.com/file/5v5Y8XMrT9Ib0rvYgx7pSK/making@umn-scrapbook?type=whiteboard&node-id=8-11&t=9dtEc3yHBrG1tKz8-0">
                   <Button
                     variant="ghost"
-                    className="border text-white shadow-md"
+                    className="border text-white opacity-90 shadow-md"
                   >
                     Our Projects
                   </Button>
