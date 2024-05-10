@@ -28,7 +28,7 @@ import Image from "next/image";
 import makers from "/makers.webp";
 import { Button } from "./ui/button";
 import { BackgroundGradientAnimationDemo } from "./blob";
-import { ClockIcon, LocateIcon } from "lucide-react";
+import { ClockIcon, LocateIcon, MapPinIcon } from "lucide-react";
 export function HomePage() {
   return (
     <main className="flex flex-col gap-12 md:gap-20">
@@ -49,7 +49,7 @@ export function HomePage() {
                 </div>
                 <div className="flex items-center gap-1">
                   <div className="w-5" />
-                  <LocateIcon className="h-5 w-5 text-gray-200 opacity-90" />
+                  <MapPinIcon className="h-5 w-5 text-gray-200 opacity-90" />
                   <p className="hite text-xl tracking-tighter text-gray-200 opacity-90">
                     Toaster Innovation Hub
                   </p>
