@@ -28,6 +28,7 @@ import Image from "next/image";
 import makers from "/makers.webp";
 import { Button } from "./ui/button";
 import { BackgroundGradientAnimationDemo } from "./blob";
+import { ClockIcon, LocateIcon } from "lucide-react";
 export function HomePage() {
   return (
     <main className="flex flex-col gap-12 md:gap-20">
@@ -38,7 +39,23 @@ export function HomePage() {
               <h1 className="text-5xl font-bold tracking-tighter text-white opacity-90">
                 making@umn
               </h1>
-              <p className="max-w-[700px] text-base/relaxed text-gray-300 md:text-xl/relaxed">
+              <div>
+                <div className="flex items-center gap-1">
+                  <div className="w-5" />
+                  <ClockIcon className="h-5 w-5 text-gray-200 opacity-90" />
+                  <p className="hite text-xl tracking-tighter text-gray-200 opacity-90">
+                    Saturdays 1 - 4 PM
+                  </p>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-5" />
+                  <LocateIcon className="h-5 w-5 text-gray-200 opacity-90" />
+                  <p className="hite text-xl tracking-tighter text-gray-200 opacity-90">
+                    Toaster Innovation Hub
+                  </p>
+                </div>
+              </div>
+              <p className="max-w-[700px] text-base/relaxed text-gray-200 md:text-xl/relaxed">
                 We host weekly sessions for you to work on your passion projects
                 with likeminded people.
               </p>
