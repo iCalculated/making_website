@@ -39,6 +39,10 @@ export function HomePage() {
               <h1 className="text-5xl font-bold tracking-tighter text-white opacity-90">
                 making@umn
               </h1>
+              <p className="max-w-[700px] text-base/relaxed text-gray-200 md:text-xl/relaxed">
+                We host weekly sessions for you to work on your passion projects
+                with likeminded people.
+              </p>
               <div>
                 <div className="flex items-center gap-1">
                   <div className="w-5" />
@@ -55,10 +59,6 @@ export function HomePage() {
                   </p>
                 </div>
               </div>
-              <p className="max-w-[700px] text-base/relaxed text-gray-200 md:text-xl/relaxed">
-                We host weekly sessions for you to work on your passion projects
-                with likeminded people.
-              </p>
               <div className="space-x-2 pb-4 md:space-x-4">
                 <Link href="https://lu.ma/making-umn">
                   <Button
