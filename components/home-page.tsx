@@ -37,11 +37,10 @@ export function HomePage() {
           <div className="container mx-auto flex h-full flex-wrap items-center justify-between px-4 sm:flex-nowrap md:px-6">
             <div className="md:max-w-1/2 lg:max-w-1/2 space-y-6">
               <h1 className="text-5xl font-bold tracking-tighter text-white opacity-90">
-                making@umn
+                making@umn ✷ 
               </h1>
               <p className="max-w-[700px] text-base/relaxed text-gray-200 md:text-xl/relaxed">
-                We host weekly sessions for you to work on your passion projects
-                with likeminded people.
+                We host weekly sessions for artists, engineers, researchers, and makers of all kinds to work on their passion projects with like-minded people
               </p>
               <div>
                 <div className="flex items-center gap-1">
